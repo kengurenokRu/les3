@@ -1,0 +1,116 @@
+.block-one {
+  border: 1px solid green;
+  width: 500px;
+  height: 100px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.block-one__in {
+  background-color: greenyellow;
+  height: 100px;
+  width: 90%;
+  animation-name: anim-one;
+  animation-duration: 3s;
+}
+
+@keyframes anim-one {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 90%;
+  }
+}
+
+.block-two {
+  border: 1px solid orange;
+  background-color: orange;
+  width: 100px;
+  height: 50px;
+  margin-bottom: 50px;
+  animation-name: anim-two;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-play-state: paused;
+}
+
+.block-two:hover {
+  animation-play-state: running;
+}
+
+@keyframes anim-two {
+  0% {
+    width: 100px;
+  }
+
+  50% {
+    width: 100%;
+  }
+
+  100% {
+    width: 100px;
+  }
+}
+
+.block-three {
+  position: relative;
+  border: 1px solid green;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+}
+
+.block-three__ball {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: blue;
+  animation-name: anim-three;
+  animation-duration: 5s;
+  Animation-timing-function: linear;
+}
+
+@keyframes anim-three {
+  0% {
+    top: 0;
+    left: 0;
+  }
+
+  40% {
+    top: 270px;
+    left: 90px;
+  }
+
+  55% {
+    top: 210px;
+    left: 135px;
+  }
+
+  70% {
+    top: 270px;
+    left: 180px;
+  }
+
+  80% {
+    top: 240px;
+    left: 210px;
+  }
+
+  90% {
+    top: 270px;
+    left: 240px;
+  }
+
+  95% {
+    top: 255px;
+    left: 255px;
+  }
+
+  100% {
+    top: 270px;
+    left: 270px;
+  }
+}
